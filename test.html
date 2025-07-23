@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <header>
+        <h2>世界一甘いお店</h2>
+    </header>
+
+    <div class="content">
+        <aside>
+            <ul>
+                <li><a href="https://www.fujiya-peko.co.jp/">トップ</a></li>
+                <li><a href="https://www.fujiya-peko.co.jp/company/news/">新着情報</a></li>
+                <li><a href="https://www.fujiya-peko.co.jp/cake/item/15325.html">おすすめのスイーツ</a></li>
+                <li><a href="https://www.fujiya-peko.co.jp/contact/">お問い合わせ</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <form method="POST" action="送信先のURL">
+                <table border="4">
+                    <tr>
+                        <th>お名前</th>
+                        <td><input type="text" name="name" size="40"></td>
+                    </tr>
+
+                    <tr>
+                        <th>お近くのお店</th>
+                        <td>
+                            <select>
+                                <option>北海道・東北</option>
+                                <option>関東</option>
+                                <option>中部</option>
+                                <option>関西</option>
+                                <option>中国・四国</option>
+                                <option>九州・沖縄</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>電話</th>
+                        <td><input type="text" name="tel" size="40"></td>
+                    </tr>
+
+                    <tr>
+                        <th>電話番号</th>
+                        <td><input type="text" name="tel" size="40"></td>
+                    </tr>
+
+                    <tr>
+                        <th>メールアドレス</th>
+                        <td><input type="text" name="email" size="40"></td>
+                    </tr>
+
+                    <tr>
+                        <th>お問い合わせ種別</th>
+                        <td>
+                            <input type="radio" name="status" value="商品">商品について
+                            <input type="radio" name="status" value="従業員">従業員について
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>お問い合わせ内容</th>
+                        <td><textarea name="description" cols="30" rows="5" placeholder="詳細を入力してください"></textarea></td>
+                    </tr>
+                </table>
+
+                <div class="button">
+                    <input type="submit" value="送信">
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>
